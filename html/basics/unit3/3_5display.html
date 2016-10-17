@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>display</title>
+    <script type="text/javascript">
+        function hidetext() {
+            var machar=  document.getElementById("con");
+            machar.style.color="grey";
+            machar.style.display="none";//隐藏
+        }
+        function showtext(){
+            var machar= document.getElementById("con");
+            machar.style.color="green";
+            machar.style.display="block";//显示
+        }
+    </script>
+</head>
+<body>
+    <h1>javascript之display</h1>
+    <p id="con">作为一个web开发是来说，想要你的页面美观漂亮，想让客户。。。</p>
+        <form>
+            <input type="button" value="隐藏按钮" onclick="hidetext()">
+            <input type="button" value="显示按钮" onclick="showtext()">
+        </form>
+</body>
+</html>

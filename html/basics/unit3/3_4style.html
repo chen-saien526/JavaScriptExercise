@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>style样式</title>
+</head>
+<body>
+    <h2 id="con">调style</h2>
+    <p>javascript使网页显示动态效果，并实现与用户交流功能</p>
+    <input type="button" value="点击事件尝试" onclick="changeStyle()">
+     <script type="text/javascript">
+         function changeStyle() {
+             var mychar=document.getElementById("con");
+             mychar.style.color="red";
+             mychar.style.fontSize="220%";
+             mychar.style.backgroundColor="orange";
+         }
+     </script>
+</body>
+</html>

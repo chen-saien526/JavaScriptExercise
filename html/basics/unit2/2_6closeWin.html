@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--待优化-->
+    <meta http-equiv="content-type" content="text/javascript;charset=utf-8">
+    <title>close windows</title>
+    <script type="text/javascript">
+        function openAndClose(data) {
+            var mainwin=window.open('http://www.baidu.com');
+            var aa=confirm("需要关闭吗？");
+            mainwin.close();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="打开新的窗口" onclick="openAndClose('open')">
+    <input type="button" value="关闭新的窗口" onclick="openAndClose('close')">
+</body>
+</html>

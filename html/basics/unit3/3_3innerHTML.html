@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>innerHtml</title>
+</head>
+<body>
+    <h2 id="con">innerHtml</h2>
+    <script type="text/javascript">
+        var mycon=document.getElementById("con");
+        document.write("原标题："+mycon.textContent+"<br>");
+        mycon.innerHTML="修改后就是我啦";
+        document.write("修改后的为："+mycon.textContent);
+    </script>
+</body>
+</html>

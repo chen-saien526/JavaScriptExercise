@@ -1,0 +1,1 @@
+document.write("这个是外部引用文件")

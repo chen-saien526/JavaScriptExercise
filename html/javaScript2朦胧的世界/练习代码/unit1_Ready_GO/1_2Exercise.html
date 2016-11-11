@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>练习编程</title>
+    <!--可以在此处引入外部文件 在src中引入文件路径 -->
+    <script src=""></script>
+    <script type="text/javascript">
+
+        /**
+         * alert()；方法
+         */
+        function alertE(){
+            window.alert("准备出发......");//弹出框
+        }
+
+        /**
+         * confrim();方法
+         */
+        function confirmE() {
+            var aa=confirm("Are you sure?");
+            if(aa){//判断值
+                document.writeln("欢迎");
+            }else {
+                document.writeln("下次继续");
+            }
+        }
+        /**
+         * promot();方法
+         */
+        function promptE(){
+            var aa=prompt("请写下你的大名","赵无极");//第二个参数为默认值
+            if(aa.trim()!="赵无极" &&""!=aa.trim()){
+                document.writeln("欢迎你"+aa);
+            }else if(""==aa.trim()){
+               document.writeln("你个狗日的");
+            }else {
+                document.writeln("你不能叫赵无极");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="alert" onclick="alertE()"><br>
+    <input type="button" value="confirm" onclick="confirmE()"><br>
+    <input type="button" value="prompt" onclick="promptE()">
+</body>
+</html>

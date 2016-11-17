@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>给变量命名</title>
+    <script type="text/javascript">
+
+        function test1() {
+
+            var a1="来自世界满满的恶意";//js可以一次声明一个变量
+            var a2,a3,a4,a5;//也可以一次声明多个变量
+            a2="捕鼠大王";
+            a3="寻觅踪迹";
+            a4=12;
+            a5="13";
+            document.writeln(a1+"<br>");
+            document.writeln(a2+"<br>");
+            document.writeln(a3+"<br>");
+            if(isNaN(a4)){
+                document.writeln(a4+"不是一个数字"+"<br>");
+            }else {
+                document.writeln(a4+"是一个数字"+"<br>");
+            }
+            if(isNaN(a5)){
+                document.writeln(a5+"不是一个数字"+"<br>");
+            }else {
+                document.writeln(a5+"是一个数字"+"<br>");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="测试" onclick="test1()">
+</body>
+</html>

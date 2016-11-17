@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>compare</title>
+    <script type="text/javascript">
+        function compare() {
+            var a1=10;
+            var a2=11;
+            confirm("未经运算前" + (a1>a2?'a1':'a2')+"得值大");
+            a1++;
+            a2--;
+            confirm("运算之后" +(a1>a2?'a1':'a2')+"的值大");
+            confirm(a1>a2);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="三元运算符" onclick="compare()">
+</body>
+</html>

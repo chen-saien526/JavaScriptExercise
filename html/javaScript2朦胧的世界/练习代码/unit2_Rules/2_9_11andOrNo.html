@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>逻辑判断符</title>
+    <script type="text/javascript">
+        function andOr(){
+            var min1=true;
+            var min2=false;
+            var min3=true;
+            var min4= 4>5;
+            if(min1 && min3){
+                confirm("真是太好了");
+            }
+            if(min1 || min2){
+                var a=confirm("也不错");
+                prompt("请留下你的大名");
+            }
+            if(min4){
+                alert("4真的大于5");
+            }else {
+                alert("4不大于5");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="逻辑运算判断符" onclick="andOr()">
+</body>
+</html>

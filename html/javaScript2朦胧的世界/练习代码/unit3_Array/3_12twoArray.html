@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>二维数组</title>
+        <script type="text/javascript">
+            function aaa() {
+                var twoArray=new Array();
+                twoArray[0]="a";//先制定第一维素组预算
+                twoArray[0]=new Array();//再定义成二维数组
+                twoArray[0][0]="aa";//然后赋值
+                twoArray[1]="b";
+                document.writeln(twoArray[0][0]);
+                console.log(twoArray);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="二维数组" onclick="aaa()">
+    </body>
+ </html>

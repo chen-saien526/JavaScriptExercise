@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>while循环</title>
+    <script type="text/javascript">
+        function whileFun() {
+            var num=0;
+            while (num<=10){
+                document.write("这是第"+num+"个数<br>");
+                num++;
+            }
+        }
+        function doWhileFun() {
+            var num=0;
+            do {
+                document.writeln("第"+num+"次方 must<br>")
+                num++;
+            } while (num<=10)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="while循环" onclick="whileFun()"><br>
+    <input type="button" value="do while循环管" onclick="doWhileFun()">
+</body>
+</html>

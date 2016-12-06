@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>break退出循环</title>
+    <script type="text/javascript">
+        function breakFun() {
+            var a=[1,2,3,4,5,6,7,8,9];
+            for(var i=0;i<a.length;i++){
+                if(a[i]==6){
+                    document.write("这是第"+[i]+"个数，不显示<br>");
+                    break;
+                }
+                document.write("这是第"+[i]+"个数，值为"+a[i]+"<br>");
+            }
+        }
+        function continueFun() {
+            var a=[1,2,3,4,5,6,7,8,9];
+            for(var i=0;i<a.length;i++){
+                if(a[i]==6){
+                    document.write("这是第"+[i]+"个数，不显示<br>");
+                    continue;
+                }
+                document.write("这是第"+[i]+"个数，值为"+a[i]+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="break测试" onclick="breakFun()"><br>
+<input type="button" value="continue测试" onclick="continueFun()">
+</body>
+</html>

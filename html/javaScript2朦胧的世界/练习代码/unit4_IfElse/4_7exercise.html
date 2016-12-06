@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/javascript;charset=utf-8">
+    <title>练习（二维数组）</title>
+    <script type="text/javascript">
+        function exeFun() {
+            var classOne=new Array();
+            var girls=new Array();
+            var infos=[["小A","女",21,"大一"],["小B","男",23,"大三"],["小C","男",24,"大四"],["小D","女",21,"大一"],["小E","女",22,"大四"],["小F","男",21,"大一"],["小G","女",22,"大二"],["小H","女",20,"大三"],["小I","女",20,"大一"],["小J","男",20,"大三"]];
+            for(var i=0;i<infos.length;i++){
+                var oneTem=infos[i].toString().split(",");
+                if(oneTem[3]=="大一"){
+                    classOne.push("["+infos[i]+"]");
+                }
+                if(oneTem[1]=="女"){
+                    girls.push("["+infos[i]+"]");
+
+                }
+            }
+            document.writeln(classOne.toString()+"<br>");
+            document.writeln(girls.toString())
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="练习测试题" onclick="exeFun()">
+</body>
+</html>

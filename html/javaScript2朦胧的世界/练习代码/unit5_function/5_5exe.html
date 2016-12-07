@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>第五章练习</title>
+    <script type="text/javascript">
+        function compareFun(x,y) {
+            if(x>y){
+               return x;
+            }else if (x<y){
+                return y;
+            }else{
+                return "same";
+            }
+        }
+        function hah() {
+           var x = window.prompt("第一个数");
+           var y = window.prompt("第二个数");
+           var cs =compareFun(x,y);
+
+            if(cs!="same"){
+                document.write("经比较后"+cs+"比较大");
+            }else {
+                document.write("两个数一样大");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="练习" onclick="hah()">
+</body>
+</html>

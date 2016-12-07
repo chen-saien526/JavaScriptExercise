@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>function函数</title>
+    <script type="text/javascript">
+        function funFun() {
+            var sub=5-2
+            document.writeln("5-2="+sub+"<br>")
+            funFun2();
+        }
+        function funFun2() {
+            document.write("hahaha"+"<br>");
+            var x = prompt("输入第一个数");
+            var y = prompt("输入第二个数");
+            var aaa=funFun3(x,y)+parseInt(x);
+            document.writeln("x+y+"+x+"="+aaa+"<br>")
+        }
+        function funFun3(x,y){
+            var sub=parseInt(x)+parseInt(y);
+            document.writeln(x+"+"+y+"="+sub+"<br>")
+            return sub;
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="function函数" onclick="funFun()">
+</body>
+</html>

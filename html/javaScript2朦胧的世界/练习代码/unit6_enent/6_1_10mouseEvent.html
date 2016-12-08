@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>鼠标点击事件</title>
+    <script type="text/javascript">
+        //window.onunload=onunloadFun();
+        function eventFun(){
+            var num1=6;
+            var num2=7;
+            var num3=num1+num2;
+            document.writeln(num3);
+            window.open("http://www.baidu.com")
+        }
+        function onmouseoverFun() {
+            confirm("请确定周边环境");
+        }
+        function onmouseoutFun() {
+            confirm("进入慕课网");
+        }
+        function onfocusFun() {
+            alert("输出大侠名字");
+        }
+        function onfocusFun2() {
+            alert("选择职业");
+        }
+        function onblurFun() {
+            alert("输入密码");
+        }
+        function onselectFun() {
+            alert("选中事件");
+        }
+        function onchangeFun() {
+            alert("内容发生改变");
+        }
+        function onloadFun() {
+            alert("加载中稍后");
+        }
+        function onunloadFun() {
+            alert("卸载事件");
+        }
+    </script>
+</head>
+<body onload="onloadFun()" onbeforeunload="onunloadFun()">
+    <form>
+        <input name="password" type="text"><br><br>
+        <input type="button" value="点击事件" name="button" onclick="eventFun()" onmouseover="onmouseoverFun()"><br><br>
+        <a href="http://www.imooc.com" onmouseout="onmouseoutFun()">进入慕课网</a><br><br>
+        姓名：<input name="名字" type="text" onfocus="onfocusFun()"><br><br>
+        请选择您的职业：<br>
+        <select name="career" onfocus="onfocusFun2()">
+            <option>学生</option>
+            <option>教师</option>
+            <option>工程师</option>
+            <option>演员</option>
+            <option>会计</option>
+        </select><br><br>
+        用户:<input name="username" type="text" value="请输入用户名！" >
+        密码:<input name="password" type="text" value="请输入密码！" onblur="onblurFun()"><br><br>
+        <textarea name="大文本" cols="60" rows="5" onselect="onselectFun()">
+            请写入个人简介，不少于200字！
+        </textarea><br><br>
+        <input type="text" value="输入啊" onchange="onchangeFun()">
+    </form>
+</body>
+</html>

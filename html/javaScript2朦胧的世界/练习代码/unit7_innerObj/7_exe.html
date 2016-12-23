@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>第七章两习题</title>
+<script type="text/javascript">
+    function exe7() {
+        var date=new Date();
+        var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+        var year=date.getFullYear();
+        var month=date.getMonth();
+        var tian=date.getDate();
+        var day=date.getDay();
+        var hour=date.getHours();
+        var minu=date.getMinutes();
+        var sec=date.getSeconds();
+        var xingqi=weekday[day];
+        document.writeln("今天是"+year+"年"+month+"月"+tian+"日，"+xingqi+","+hour+"点"+minu+"分"+sec+"秒"+"<br>")
+
+        var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+        var array=scoreStr.split(";");
+        document.writeln(scoreStr.split(";")+"<br>");
+        document.writeln("array的长度"+array.length+"<br>");
+        //document.writeln(array[0].slice(3)+"<br>");
+        var array2=new Array();
+        var result=0;
+        for(var i=0;i<array.length;i++){
+            array2.push(array[i].slice(3));
+            result+=parseInt(array[i].slice(3));
+        }
+        document.writeln("array2里的内容"+array2.sort().toString()+"<br>");
+        document.writeln("总成绩："+parseInt(result)+"<br>");
+        var result_ping= (parseInt(result)/array.length);
+        document.writeln("平均成绩："+result_ping+"<br>");
+        /**
+         * slice ,subtr,subtring
+         */
+    }
+</script>
+</head>
+<body>
+<input type="button" value="事件按钮" onclick="exe7()">
+</body>
+</html>

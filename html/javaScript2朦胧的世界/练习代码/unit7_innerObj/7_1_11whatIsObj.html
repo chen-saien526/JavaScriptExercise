@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>什么是对象</title>
+    <script type="text/javascript">
+        var myArray=new Array(5)
+        var myNum=myArray.length;
+        var str="Hello World";
+        var stru=str.toUpperCase();
+        document.write("stru是:"+stru+"<br>");
+        document.write("数组长度是:"+myNum+"<br>");
+        var date=new Date(2010,12,9);
+        document.writeln("事件"+date+"<br>");
+        var date2=new Date();
+        document.writeln("现在是:"+date2.getFullYear()+"<br>");
+        document.writeln("现在是:"+date.getYear()+"<br>");
+        var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+        var mynum2=date2.getDay();
+        document.writeln("现在是:"+date2.getDay()+"<br>");
+        document.writeln("今天星期:"+weekday[mynum2]+"<br>");
+        document.writeln("今天星期:"+date2.getTime()+"<br>");
+        var hello1="hello 你 welcome我";
+        var hello2="HELLO,WELCOME";
+        document.writeln("hello1全大写是："+hello1.toUpperCase()+"<br>");
+        document.writeln("hello2全小写是："+hello2.toLowerCase()+"<br>");
+        document.writeln("hello1长度："+hello1.length+"<br>");
+        document.writeln("hello1最后一个字是："+hello1.charAt(hello1.length-1)+"<br>");
+        document.writeln("hello2长度："+hello2.length+"<br>");
+        document.writeln("hello2 O首位："+hello2.indexOf("O",5)+"<br>");
+        document.writeln("hello2 截取前1位字符串："+hello2.substring(0,1)+"<br>");
+        document.writeln("hello2 截取前5位字符串："+hello2.substring(0,5)+"<br>");
+        document.writeln("hello2 截取5位字符串："+hello2.substr(1,5)+"<br>");
+        document.writeln("hello2 截取5位字符串："+hello2.substr(-1,5)+"<br>")
+    </script>
+</head>
+<body>
+
+</body>
+</html>

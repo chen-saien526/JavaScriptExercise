@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>设置超时</title>
+<script type="text/javascript">
+    var hello=function () {
+        alert("hello world");
+    };
+    function onSetTimeOutaa() {
+      setTimeout(hello,3000);
+    }
+    var num1=0, i;
+    function countnum() {
+        clearTimeout(i);
+        document.getElementById('numinput').value=num1;
+        num1=num1+1;
+        i=setTimeout('countnum()' ,1000);
+    }
+    function clearTimeoutFun() {
+        clearTimeout(i);
+    }
+</script>
+</head>
+<body>
+<form>
+    <input type="button" id="setoutTime" onclick="onSetTimeOutaa()" value="看延迟"><br>
+    <input type="button" id="setoutTime11" onclick="countnum()" value="开始计时">
+    <input type="button" id="clearsetoutTime" onclick="clearTimeoutFun()" value="取消计时"><br>
+    <input type="text" id="numinput">
+</form>
+</body>
+</html>

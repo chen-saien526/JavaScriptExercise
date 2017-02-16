@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>JS定时器</title>
+    <script type="text/javascript">
+        var nowTime=setInterval(getTimeNow,1000);
+        console.log(nowTime);
+        function getTimeNow() {
+            var nowDate=new Date();
+            var nowHour=nowDate.getHours();
+            var nowMin=nowDate.getMinutes();
+            var nowSec=nowDate.getSeconds();
+            var attrTime=nowHour+":"+nowMin+":"+nowSec;
+            document.getElementById("aaa").value=attrTime;
+        }
+        function cleartt() {
+            clearInterval(nowTime);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="aaa" size="50"/>
+    <input type="button" id="clear" onclick="cleartt()" value="取消计时">
+</body>
+</html>

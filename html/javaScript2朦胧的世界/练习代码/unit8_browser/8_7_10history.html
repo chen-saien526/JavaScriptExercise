@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>History</title>
+    <script type="text/javascript">
+        var hl=window.history.length;//返回浏览器中历史url的数量
+        document.writeln(hl);
+        function gobackFun(){
+            window.history.back();
+            //window.history.go(-1);
+        }
+        function forwardFun() {
+            window.history.forward();
+            //window.history.go(2);
+        }
+        function forwardGo() {
+            window.history.go(2);
+        }
+    </script>
+</head>
+<body>
+<br/>
+点击下面的锚点链接，添加历史列表项:
+
+<br/>
+<a href="http://www.baidu.com">第一个锚点</a>
+<br />
+<a href="http://www.jd.com">第二个锚点</a>
+<br /><br />
+使用下面按钮，实现返回前一个页面:<br>
+<input type="button" value="返回上一个页面" onclick="gobackFun()"><br>
+<input type="button" value="进入下一个页面" onclick="forwardFun()"><br>
+<input type="button" value="进入下二个页面" onclick="forwardGo()"><br>
+</body>
+</html>
